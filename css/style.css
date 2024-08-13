@@ -7,14 +7,28 @@ html {
 body{
 	font-size: 16px;
 	font-family: Tahoma, Verdana, sans-serif;
-	background-image: linear-gradient(to top, #dfe9f3, #0D355D);
+	background-image: linear-gradient(to top, #dfe9f3, #8abef1);
 }
-h1{
+.titulo{
+   line-height: 2;
+   background-image: url(../images/black-diamonds.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   
+}
+h1, h2{
 	text-align: center;
 	color: #ffffff;
+   font-family: "Foldit", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 3rem;
+   font-style: normal;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 .imgen{
-	background-image: url(../images/Quien-Controla-La-Tecnologia.png);
+	background-image: url(../images/Joyeria2.jpg);
 	 background-repeat: no-repeat;
    background-size: cover;
     height: 450px;
@@ -23,10 +37,14 @@ h1{
 
    margin-bottom: 2rem;
 }
+.imgperfil{
+   width: min(300px, 50%);
+   height: 300px;
+}
 .perfil{
 	position: absolute;
-   /*hacer transparencia*/
-   background-color: rgba(0, 0, 0,.7);
+   /*hacer transparencia
+   background-color: rgba(0, 0, 0,.7);*/
    
    
    top: 0;
@@ -41,6 +59,7 @@ h1{
 }
 .perfil h2, .perfil h3{
 	color: #ffffff;
+   
 }
 .nav{
 	display: flex;
@@ -50,6 +69,8 @@ h1{
 	text-align: center;
 	background-color: #17C6DB;
 	padding: 1rem;
+   display: block;
+   justify-content: space-between;
 }
 .navegacion a{
 	color: #ffffff;
@@ -63,6 +84,39 @@ h1{
 	 background-color: #E28D26 ;
    color: #010101;
 }
+.contenedor{
+   max-width: 100rem;
+   margin-top: 0rem;
+   margin-right: auto;
+   margin-bottom: 1rem;
+   margin-left: auto;
+   background-image: linear-gradient(to top, #8abef1, #dfe9f3 );
+}
+.sombra{
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+   -webkit-box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+   -moz-box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+    box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.servicio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.servicio h3{
+   color: var(--secundario);
+   font-weight: normal;
+}
+.servicio p{
+   color: var(--oscuro);
+   text-align: center;
+   line-height: 2;
+}
 .subtitulo{
 	color: #ffffff;
 	font-size: 1.2rem;
@@ -72,17 +126,45 @@ h1{
 	font-weight: 700;
 }
 .formulario{
-	margin-top: 1rem;
-	margin-right: 0rem;
-	margin-bottom: 2rem;
-	margin-left: 5rem;
-    width: 400px;
+   width: min(700px, 100%);
     padding: 1rem;
-	background-color: #E28D26;
+	background-color: #180e01;
 	color: #ffffff;
+   border-radius: 1rem;
+   text-align: center;
+   margin: 0 auto;
 }
-.campoform{
+.formulario fieldset{
+   border: none;
+}
+.campo {
 	margin-bottom: 0.6rem;
+}
+.campo label {
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   display: block;
+}
+.input-text {
+   border: none;
+   border-radius: 0.5rem;
+   padding: 1rem;
+   width: 50%;
+}
+.boton{
+   background-color: #17C6DB;
+   color: #ffffff;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 1rem 3rem;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   border: none;
+}
+.boton:hover{
+   cursor: pointer;
 }
 .pie{
 	text-align: center;
@@ -91,7 +173,7 @@ h1{
 	padding: 0.5rem;
 }
 .img{
-	width: 36px;
+   	width: 36px;
 }
 
 @media (min-width: 480px){
@@ -99,29 +181,36 @@ h1{
 }
 /*vista tablet*/
 @media (min-width: 768px){
+   .barra{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+   }
    .navegacion{
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
    }
 
 /*vista de servicios*/
 .servicios{
    display: grid;
-/*prueva1*/
-  /*grid-template-columns: 350px 250px 350px;*/
-/*prueba2*/
-  /*grid-template-rows: 300px 500px;*/
-/*prueba3 parametro 1 filas parametro 2 columnas*/
-  /*grid: 300px 500px / 300px 300px;*/ 
-/*definimos en %*/
   grid-template-columns: 33% 33% 33%;
   columns: 1rem;
  }
- .contenedor-campos{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: auto auto 15rem;
-   column-gap: 1rem;
+ .legend {
+   text-align: center;
+   font-size: 1.6rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-bottom: 2rem;
+ }
+ .campoform {
+   padding: 1rem;
+	background-color: #180e01;
+	color: #ffffff;
+   border-radius: 1rem;
+   text-align: center;
+   margin: 0 auto;
 }
 
 .campo:nth-child(3), .campo:nth-child(4){

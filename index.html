@@ -3,101 +3,115 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Repaso Bootcamp</title>
+	<title>Joyeria New Era</title>
 
   <link rel="preload" href="css/style.css" as="style">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
 
 
 </head>
 <body>
-	<h1>SITIO WEB BOOTCAMP - FULL STACK</h1>
- <main>
-<!--comentario-->
- 	<section class="imgen"> 
- 	 <div class="perfil">
-	   <img src="" alt="Mi perfil" class="imgperfil">
-	   <h2>David Alzate</h2>
-	   <h3>Desarrollador Web Full Stack</h3>
-   </div>
-  </section> 
-	   <nav class="nav"> 
+  <header class="titulo barra">
+	  <h1>JOYERIA NEW ERA</h1>
+	  <h2>Estilo que brilla contigo</h2>
+  </header>
+
+	<nav class="nav"> 
 	    <nav class="navegacion">
 		   <a href="index.html">Inicio</a>
-		   <a href="portafolio.html">Portafolio</a>
-		   <a href="https://talentotechbogota.co/">Emprendimiento</a>
-		   <a href="#contacto">Contactame</a>
-	  </nav>
-   </nav>
-	<div class="subtitulo">Conóceme</div>
-
-	<p>Bachiller académico <span class="enfasis"> billigue </span>, con 9 años de experiencia en diversos cambos dedicados a la tecnologia y experiencia del usuario, atencion al cliente y ventas, ademas de contar con conocimientos elevados en desarrollo web y servidores web para creacion y mantenimiento de paginas y API. Contando ademas con experiencia en digitación, manejo de base de datos, preparación de informes con habilidades en escucha activa, comunicación asertiva, persuasión, organización, orientación al cliente, orientación a los resultados y seguimiento de instrucciones.</p>
-
-	<div class="subtitulo">Educación:</div>
-
-	  <ol>
-	  	<li>Bachiller: IED Jose Felix Restrepo</li>
-	  	<li>Bootcamp: Desarrollo web Full Stack</li>
-	  </ol>
-	  <div class="subtitulo">Experencia laboral</div>
-	    <ul>Concentrix: Asesor servicio al cliente ventas</ul>
-	    <ul>Teleperformance: Asesor servicio al cliente</ul>
-	    <ul>Sutherland: Asesor Soporte tecnico IT</ul>
-	    <ul>IGT Solutions: Asesor servicio al cliente</ul>
-	    <ul>IntouchCX: Asesor soporte tecnico app</ul>
+		   <a href="Joyeria.html">Joyeria</a>
+		   <a href="https://www.tiktok.com/@newerajoyeria?_t=8ooo7oJZDDJ&_r=1">Clientes</a>
+		   <a href="https://beacons.ai/joyerianewera">Contactame</a>
+	    </nav>
+       </nav>
+<main class="contenedor sombra">
+ 	<section class="imgen"> 
+ 	 <div class="perfil">
+	   <img src="./images/Logo-2.png" alt="Mi perfil" class="imgperfil">
+	   <h2>NEW ERA</h2>
+	   <h3>Joyeria de alta calidad ubicados en Bogotá D.C</h3>
+   </div>
+  </section> 
+	   
+<div class="servicio">	
+   <div class="subtitulo">¿Por qué elegir la joyería como parte de tu vida cotidiana?</div>
+	<p>✨ Descubre el Brillo de la Joyería en tu Vida Diaria ✨
+		La joyería no es solo un accesorio; es una expresión de tu estilo, personalidad y emociones. Cada pieza cuenta una historia, desde los delicados pendientes que llevas a la oficina hasta el anillo que simboliza un amor eterno.
+		En la rutina diaria, la joyería puede transformar incluso el atuendo más sencillo en algo extraordinario. Un collar brillante puede iluminar tu día, mientras que una pulsera elegante puede ser la compañía perfecta para esa reunión importante. ¡Deja que cada joya hable por ti!</p>
+   </div>
+<div class="servicios">
+   <div class="servicio">
+	  <div class="subtitulo">Expresión Personal:</div>
+	  <p>✨Cada día es una nueva oportunidad para mostrar quién eres. Combina tus joyas con tu estado de ánimo y outfit.</p>
+   </div>
+   <div class="servicio">
+	  <div class="subtitulo">Momentos Especiales:</div>
+	    <p>💖Celebra cada pequeño logro con una pieza que te inspire. La joyería puede ser el recordatorio de esos instantes únicos.</p>
+   </div>
+   <div class="servicio">
+	 <div class="subtitulo">Regalos que Dejan Huella:</div>
+	  <p>🌟Comparte la magia de la joyería con tus seres queridos. Un regalo significativo puede crear recuerdos imborrables.</p>
+   </div>
+</div>
+   <div class="servicio">
+	  <p>No subestimes el poder de un buen accesorio. ¡Adorna tu vida con joyería y deja que el brillo te acompañe cada día! 💎✨
+		Visita nuestra colección y encuentra la pieza perfecta que refleje tu esencia. ¡Tu historia merece ser contada!</p>
+   </div>
+   <div class="legend">
       <a name="contacto"></a>
-	  <div class="subtitulo">Contactame</div>
+	  <div class="subtitulo">Contacto Directo</div>
+   </div>
     <div class="formulario"> 
-      <div class="campoform">
+	  <div class="campoform">
+        <div class="campo">
 	     <form action="index.html" method="POST" name="formcontacto" id="formcontacto">
 	     	<label for="">Nombre</label>
-	     	<input type="text" name="nombre" id="nombre" placeholder="Nombre">
-      </div>
-      <div class="campoform">
-	     	<label for="">Apellido</label>
-	     	<input type="text" name="apellido" id="apellido" placeholder="Apellido">
-      </div>
-      <div class="campoform">
+	     	<input class="input-text" type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="campo">
+	     	<label for="">Correo</label>
+	     	<input class="input-text" type="text" name="correo" id="correo" placeholder="Correo">
+        </div>
+        <div class="campo">
 	     	<label for="sexo"></label>
 
 	     	<input type="radio" name="sexo" id="sexo" value="Femenino">
 	     	Femenino
 	     	<input type="radio" name="sexo" id="sexo" value="Masculino">
 	     	Masculino
-      </div>
-      <div class="campoform">
-	     	<label for="">Tema de interes</label>
+        </div>
+        <div class="campo">
+	     	<label for="">Joyeria de interes</label>
 	     	<Select name="interes" id="interes">
-	     		<option value="html">HTML</option>
-	     		<option value="css">CSS</option>
-	     		<option value="JS">Java Script</option>
-	     		<option value="nodejs">Node JS</option>
+	     		<option value="collares">Collares</option>
+	     		<option value="pulseras">Pulseras</option>
+	     		<option value="anillos">Anillos</option>
+	     		<option value="pendientes">Pendientes</option>
 	     	</Select>
-      </div>
-      <div class="campoform">
-	     	<label for="">Recibir Noticias</label>
+        </div>
+        <div class="campo">
+	     	<label for="">Recibir Mensajes Sobre lo Nuevo en Joyeria</label>
 	     	<input type="checkbox" name="noticias" id="noticias">
-      </div>
-      <div class="campoform">
-	     	<input type="submit" value="Contactar"name="btnEnviar" id="btnEnviar">
-	     	<input type="reset" value="Limpiar"name="btnEnviar" id="btnEnviar">
+        </div>
+        <div>
+	  </div>		
+	     	<input class="boton envia" type="submit" value="Contactar"name="btnEnviar" id="btnEnviar">
+	     	<input class="boton envia" type="reset" value="Limpiar"name="btnEnviar" id="btnEnviar">
 	    </div> 	
+		
 	   </form>
 	  </div> 
  </main>
  <footer class="pie">
 	    <p>Sigueme en redes sociales</p>
 
-	    <a href="https://www.instagram.com/monkey.wk/">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-            <path d="M16.5 7.5l0 .01" />
-          </svg>
+	    <a href="https://www.instagram.com/joyerianewera?igsh=MWRwMWV2Mjk4MXo5Nw==">
+            <img src="images/instagram-icon.png" alt="instagram" class="img">
         </a>
-        <a href="https://www.facebook.com/mono.sb001">
-        	<img src="images/facebook.png" alt="facebook" class="img">
+        <a href="https://www.tiktok.com/@newerajoyeria?_t=8ooo7oJZDDJ&_r=1">
+        	<img src="images/tiktok-logo.png" alt="facebook" class="img">
 
         </a>
  </footer>
