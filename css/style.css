@@ -20,12 +20,10 @@ body{
 h1, h2{
 	text-align: center;
 	color: #ffffff;
-   font-family: "Foldit", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 3rem;
-   font-style: normal;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
+   font-family: "Charm", cursive, Foldit, Bodoni Moda, Philosopher, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+   
 }
 .imgen{
 	background-image: url(../images/Joyeria2.jpg);
@@ -99,7 +97,24 @@ h1, h2{
    -moz-box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
     box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
 
-    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.contenedores {
+   max-width: 115rem;
+   margin-top: 0rem;
+   margin-right: auto;
+   margin-bottom: 1rem;
+   margin-left: auto;
+   background-image: linear-gradient(to top, #8abef1, #dfe9f3 );
+}
+.sombras{
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+   -webkit-box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+   -moz-box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+    box-shadow: 0px 5px 15px 0px rgba(82,79,82,1);
+
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -121,6 +136,7 @@ h1, h2{
 	color: #ffffff;
 	font-size: 1.2rem;
 	font-weight: 700;
+   margin-top: 1.5rem;
 }
 .enfasis{
 	font-weight: 700;
@@ -168,7 +184,10 @@ h1, h2{
 }
 .pie{
 	text-align: center;
-	background-color: #3E413C;
+	background-image: url(../images/buttom3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
 	color: #ffffff;
 	padding: 0.5rem;
 }
@@ -176,8 +195,17 @@ h1, h2{
    	width: 36px;
 }
 
+
 @media (min-width: 480px){
-   
+   .cuadricula {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      columns: 1rem;
+      align-items: center;
+      text-align: center;
+      margin: 1rem;
+      justify-items: center;
+   }
 }
 /*vista tablet*/
 @media (min-width: 768px){
@@ -190,12 +218,28 @@ h1, h2{
       flex-direction: row;
       justify-content: space-between;
    }
+.carrusel{
+   width: 900px;
+   height: 300px;
+   align-items: center;
+   margin: 1rem;
+
+}
 
 /*vista de servicios*/
 .servicios{
    display: grid;
   grid-template-columns: 33% 33% 33%;
   columns: 1rem;
+ }
+ .cuadricula {
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   columns: 1rem;
+   align-items: center;
+   text-align: center;
+   margin: 1rem;
+   justify-items: center;
  }
  .legend {
    text-align: center;
@@ -219,9 +263,27 @@ h1, h2{
 }
 /*portatil*/
 @media (min-width: 1140px){
+   .cuadricula {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      columns: 1rem;
+      align-items: center;
+      text-align: center;
+      margin: 1rem;
+      justify-items: center;
+    }
 
 }
 /*escritorio*/
 @media (min-width: 1400px){
+   .cuadricula {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      columns: 1rem;
+      align-items: center;
+      text-align: center;
+      margin: 1rem;
+      justify-items: center;
+    }
 
 }
