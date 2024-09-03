@@ -25,6 +25,12 @@ h1, h2{
   font-style: normal;
    
 }
+h3 {
+   text-align: center;
+   color: #ffffff;
+   font-weight: 700;
+   font-style: normal;
+}
 .imgen{
 	background-image: url(../images/Joyeria2.jpg);
 	 background-repeat: no-repeat;
@@ -77,10 +83,13 @@ h1, h2{
    font-weight: bold;
    padding: 1rem;
    text-align: center;
+   margin: 1rem;
 }
 .navegacion a:hover{
 	 background-color: #E28D26 ;
    color: #010101;
+   border-radius: 1rem;
+   justify-content: center;
 }
 .contenedor{
    max-width: 100rem;
@@ -257,6 +266,7 @@ h1, h2{
       margin: 1rem;
       justify-items: center;
    }
+   
 }
 /*vista tablet*/
 @media (min-width: 768px){
@@ -264,6 +274,9 @@ h1, h2{
       display: flex;
       align-items: center;
       justify-content: space-around;
+   }
+   .colorn {
+      color: #010101;
    }
    .navegacion{
       flex-direction: row;
